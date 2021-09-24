@@ -14,12 +14,12 @@ a {
 	text-decoration: none;
 }
 
-img {
+.right {
 	width: 100%;
 }
 
 .nav-container {
-	background: #6700EE;
+	background: #001f3b;
 
 	a {
 		color: #fff;
@@ -29,7 +29,7 @@ img {
 header {
 	display: flex;
 	justify-content: space-between;
-	padding: 2em;
+	padding: 1em;
 
 	.logo {
 		color: #00F7FF;
@@ -51,7 +51,7 @@ header {
 }
 
 .hero {
-	background: #6E00FF;
+	background: #09264d;
 	color: #fff;
 	display: grid;
 	text-align: center;
@@ -62,7 +62,7 @@ header {
 		margin: 0 auto;
 		width: 200px;
 		font-weight: bold;
-		color: #FF64CB;
+		color: #05DBF2;
 		
 		span {
 			margin-top: 1em;
@@ -90,7 +90,7 @@ section {
 		width: 200px;
 		height: 200px;
 		border-radius: 50%;
-		background-color: #E5D5FA;
+		background-color: #05aff233;
 		top: 0;
 		left: 0;
 		z-index: -1;
@@ -100,7 +100,7 @@ section {
 .subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
-	color: #6E00FF;
+	color: #05AFF2;
 	letter-spacing: .2em;
 	font-size: .85em;
 }
@@ -122,7 +122,7 @@ section {
 }
 
 .skills {
-	background: #FF64CB;
+	background: #05AFF2;
 }
 
 .skills-container ul li {
@@ -138,13 +138,6 @@ section {
 		margin: 0 auto;
 	}
 
-	&.one {
-		width: 40px;
-	}
-	&.two {
-		width: 50px;
-	}
-
 	.skill-title {
 		font-weight: bold;
 	}
@@ -154,6 +147,13 @@ section {
 	}
 }
 
+.one {
+	width: 100px;
+}
+.two {
+	width: 80px;
+}
+
 .portfolio {
 	background: #F7F7F7;
 }
@@ -161,6 +161,7 @@ section {
 .portfolio-container a img {
 	border-radius: 1em;
 	margin-bottom: 2em;
+	width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -171,6 +172,7 @@ section {
 	.featured, .portfolio-container {
 		display: grid;
 		grid-template-columns:  40% auto;
+		width: 100%;
 	}
 
 	.left, .portfolio-left {
@@ -184,7 +186,7 @@ section {
 	}
 
 	.skills {
-		margin-top: -5em;
+		margin-top: -7em;
 		margin-bottom: -7em;
 		padding-top: 7em;
 	}
@@ -213,7 +215,7 @@ section {
 		padding: 0;
 
 		.content {
-			background: #6E00FF;
+			background: #09264d;
 			padding: 10em 8em 6em 4em;
 			text-align: left;
 			border-bottom-right-radius: 20px;
@@ -244,7 +246,7 @@ section {
 		background: unset;
 
 		header {
-			background: #6700EE;
+			background: #001f3b;
 		}
 	}
 

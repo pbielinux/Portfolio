@@ -15,12 +15,12 @@ a {
   text-decoration: none;
 }
 
-img {
+.right {
   width: 100%;
 }
 
 .nav-container {
-  background: #6700EE;
+  background: #001f3b;
 }
 
 .nav-container a {
@@ -34,7 +34,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2em;
+  padding: 1em;
 }
 
 header .logo {
@@ -58,7 +58,7 @@ header ul a {
 }
 
 .hero {
-  background: #6E00FF;
+  background: #09264d;
   color: #fff;
   display: -ms-grid;
   display: grid;
@@ -73,7 +73,7 @@ header ul a {
   margin: 0 auto;
   width: 200px;
   font-weight: bold;
-  color: #FF64CB;
+  color: #05DBF2;
 }
 
 .hero .meet span {
@@ -101,7 +101,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  background-color: #E5D5FA;
+  background-color: #05aff233;
   top: 0;
   left: 0;
   z-index: -1;
@@ -110,7 +110,7 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #6E00FF;
+  color: #05AFF2;
   letter-spacing: .2em;
   font-size: .85em;
 }
@@ -132,7 +132,7 @@ section {
 }
 
 .skills {
-  background: #FF64CB;
+  background: #05AFF2;
 }
 
 .skills-container ul li {
@@ -150,20 +150,20 @@ section {
   margin: 0 auto;
 }
 
-.skills-container ul li.one {
-  width: 40px;
-}
-
-.skills-container ul li.two {
-  width: 50px;
-}
-
 .skills-container ul li .skill-title {
   font-weight: bold;
 }
 
 .skills-container ul li .featured-desc {
   margin-bottom: 2em;
+}
+
+.one {
+  width: 100px;
+}
+
+.two {
+  width: 80px;
 }
 
 .portfolio {
@@ -173,6 +173,7 @@ section {
 .portfolio-container a img {
   border-radius: 1em;
   margin-bottom: 2em;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -184,6 +185,7 @@ section {
     display: grid;
     -ms-grid-columns: 40% auto;
         grid-template-columns: 40% auto;
+    width: 100%;
   }
   .left, .portfolio-left {
     display: -ms-grid;
@@ -195,7 +197,7 @@ section {
     margin-top: 1em;
   }
   .skills {
-    margin-top: -5em;
+    margin-top: -7em;
     margin-bottom: -7em;
     padding-top: 7em;
   }
@@ -225,7 +227,7 @@ section {
     padding: 0;
   }
   .hero .content {
-    background: #6E00FF;
+    background: #09264d;
     padding: 10em 8em 6em 4em;
     text-align: left;
     border-bottom-right-radius: 20px;
@@ -252,7 +254,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #6700EE;
+    background: #001f3b;
   }
   header {
     padding: 2em 2em 2em 4em;
