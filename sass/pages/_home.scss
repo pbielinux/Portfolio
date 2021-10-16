@@ -1,0 +1,519 @@
+.about {
+  background: rgb(250, 250, 250);
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 8rem;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+      @include respond(phone) {
+        font-size: 2.4rem;
+      }
+    }
+    &-details-para {
+      font-size: 1.8rem;
+      color: grey;
+      max-width: 60rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+      &--hl {
+        font-weight: 700;
+        margin: 0 3px;
+      }
+      &:last-child {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}
+
+.projects {
+  &__row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 5rem;
+    margin-bottom: 11rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      margin-bottom: 8rem;
+    }
+
+    @include respond(tab-port) {
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-img-cont {
+      overflow: hidden;
+    }
+    &-img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+    }
+    &-content {
+      padding: 2rem 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @include respond(tab-port) {
+        align-items: center;
+      }
+
+      &-title {
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+        @include respond(phone) {
+          font-size: 2.4rem;
+        }
+      }
+      
+	  &-lang {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+		color: rgb(148, 148, 148);
+        @include respond(phone) {
+          font-size: 1.8rem;
+        }
+      }
+     
+	  &-desc {
+        font-size: 1.8rem;
+        color: grey;
+        max-width: 60rem;
+        line-height: 1.7;
+        margin-bottom: 3rem;
+        @include respond(phone) {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+.contact {
+  background: linear-gradient(
+      to right,
+      rgba($themeClrPrimary, 0.8),
+      rgba($themeClrPrimary, 0.8)
+    ),
+    url(../../assets/svg/common-bg.svg);
+  background-size: cover;
+  background-position: center;
+
+  &__form-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(#fff, 2);
+    padding: 4rem;
+    margin-top: 6rem;
+    max-width: 80rem;
+    text-align: right;
+    width: 95%;
+    border-radius: $commonBorderRadius;
+
+    margin: 5rem auto 0 auto;
+    @include respond(phone) {
+      padding: 3rem;
+    }
+  }
+  &__form-field {
+    margin-bottom: 4rem;
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+  }
+  &__form-label {
+    color: #666;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: left;
+  }
+  &__form-input {
+    color: #333;
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235);
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    background: rgba(rgb(240, 240, 240), 1);
+    border-radius: $commonBorderRadius;
+    font-weight: 600;
+    /* Code for Modern Browsers */
+    &::placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    /* Code for WebKit, Blink, Edge */
+    &::-webkit-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    /* Code for Internet Explorer 10-11 */
+    &:-ms-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    /* Code for Microsoft Edge */
+    &::-ms-input-placeholder {
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    /* Code for Mozilla Firefox 4 to 18 */
+    &:-moz-placeholder {
+      opacity: 1;
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+
+    /* Code for Mozilla Firefox 19+ */
+    &::-moz-placeholder {
+      opacity: 1;
+      color: #999;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+  }
+  &__btn {
+    width: 30%;
+
+    padding: 2rem 4rem;
+    font-size: 1.6rem;
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+}
+
+
+.hero {
+	background: #09264d;
+	color: #fff;
+	display: grid;
+	text-align: center;
+	padding: 4em;
+	height: 90vh;
+	
+	.meet {
+		display: flex;
+		margin: 2em auto;
+		justify-content: center;
+		width: 200px;
+		font-weight: bold;
+		font-size: 1.5em;
+		color: #05DBF2;
+		
+		span {
+			margin-right: .5em;
+		}
+	}
+
+	.scroll {
+		width: 30px;
+		margin-top: 2em;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+}
+
+section {
+	padding: 4em 2em;
+	text-align: center;
+}
+
+.featured {
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		background-color: #05aff233;
+		top: 0;
+		left: 0;
+		z-index: -1;
+	}
+}
+
+.subtitle {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #05AFF2;
+	letter-spacing: .2em;
+	font-size: .85em;
+}
+
+.featured-title {
+	color: black;
+	font-weight: bold;
+	font-size: 1.3em;
+	display: block;
+	margin-top: -.4em;
+}
+
+.featured-desc {
+	color: #3B3B3B;
+	margin-bottom: 3em;
+	font-size: .85em;
+	line-height: 1.8em;
+	font-weight: 400;
+}
+
+
+.skills-container ul li {
+	background: white;
+	padding: 2em;
+	border-radius: 1em;
+	margin-bottom: 1em;
+
+	.icon-container {
+		height: 100px;
+		display: grid;
+		place-content: center;
+		margin: 0 auto;
+	}
+
+	.skill-title {
+		font-weight: bold;
+	}
+
+	.featured-desc {
+		margin-bottom: 2em;
+	}
+}
+
+.one {
+	width: 100px;
+}
+.two {
+	width: 80px;
+}
+
+.portfolio {
+	background: #F7F7F7;
+}
+
+.portfolio-container a img {
+	border-radius: 1em;
+	margin-bottom: 2em;
+	width: 100%;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1em;
+	font-size: 1.5em;
+
+	.logo {
+		color: #00F7FF;
+		font-weight: bold;
+	}
+
+	ul {
+		display: flex;
+
+		a {
+			display: block;
+			padding: 0 1em;
+		}
+	}
+}
+
+.nav-container {
+	background: #001f3b;
+
+	a {
+		color: #fff;
+	}
+}
+
+.social-header, .hero-design {
+	display: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.featured, .portfolio {
+		text-align: left;
+	}
+
+	.featured, .portfolio-container {
+		display: grid;
+		grid-template-columns:  40% auto;
+		width: 100%;
+	}
+
+	.left, .portfolio-left {
+		display: grid;
+		place-content: center;
+	}
+
+	.right {
+		margin-left: 2em;
+		margin-top: 1em;
+	}
+
+	.skills {
+		margin-top: -7em;
+		margin-bottom: -7em;
+		padding-top: 7em;
+	}
+
+	.skills-container ul {
+		display: grid;
+		grid-template-columns: repeat(2, 50%);
+		grid-gap: 1em;
+	}
+
+	.portfolio {
+		padding-top: 7em;
+	}
+
+	.portfolio-container img {
+		margin-left: 2em;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.hero {
+		height: 90vh;
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+		padding: 0;
+
+		.content {
+			background: #09264d;
+			padding: 15em 20em 6em 5em;
+			text-align: left;
+			border-bottom-right-radius: 20px;
+		
+			h1 {
+				font-size: 5em;
+				line-height: 1.2em;
+				max-width: 400px;
+			}
+		}
+
+		.meet {
+			margin-left: -30px;
+		}
+
+		.hero-design {
+			display: unset;
+			margin-left: -50%;
+			margin-top: 10%;
+			width: 100%;
+		}
+	}
+
+
+	.nav-container {
+		display: grid;
+		grid-template-columns: 66% auto;
+		background: unset;
+
+		header {
+			background: #001f3b;
+		}
+	}
+
+	header {
+		padding: 2em 2em 2em 4em;
+	}
+
+	.social-header {
+		display: block;
+		padding: 2em 7em 2em 0;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+			width: 10em;
+			float: right;
+		}
+	}
+	
+	section {
+		padding: 4em;
+	}
+
+	.portfolio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			float: right;
+			max-width: 800px;
+		}
+	}
+
+	.portfolio-container {
+		max-width: 1400px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	header {
+		padding: 2em 2em 2em 10em;
+	}
+
+	.social-header {
+		padding: 2em 15em 2em 0;
+	}
+
+	section {
+		padding: 10em 10em 4em 10em;
+	}
+
+	.hero {
+		.content {
+			padding: 15em 15em 6em 15em;
+
+			h1 {
+				max-width: 600px;
+			}
+		}
+	}
+}
+
+.circle {
+	animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+	to {
+		transform: translateY(24px);
+	}
+}
