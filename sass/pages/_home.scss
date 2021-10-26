@@ -7,8 +7,20 @@
     @include respond(tab-port) {
       grid-template-columns: 1fr;
       grid-gap: 8rem;
+
     }
-    &-title {
+
+	&-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: left;
+		@include respond(tab-port) {
+			text-align: center;
+		}
+	}
+    
+	&-title {
       font-weight: 700;
       font-size: 2.8rem;
       margin-bottom: 3rem;
@@ -39,6 +51,7 @@
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 5rem;
     margin-bottom: 11rem;
+	text-align: left;
 
     @include respond(tab-port) {
       grid-template-columns: 1fr;
@@ -61,6 +74,7 @@
       width: 100%;
       display: block;
       object-fit: cover;
+	  border-radius: 5px;
     }
     &-content {
       padding: 2rem 0;
