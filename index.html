@@ -25,9 +25,9 @@
 			<a href="index.html" class="logo">Pedro Bielik</a>
 			<nav>
 				<ul>
-					<li><a href="#">My work</a></li>
-					<li><a href="#">My skills</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="./index.html#projects">My work</a></li>
+					<li><a href="./index.html#about">My skills</a></li>
+					<li><a href="./index.html#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header> 
@@ -81,7 +81,7 @@
             <div class="about__content-details">
               <p class="about__content-details-para">
                 Hey! I'm <strong>Pedro Bielik</strong>, 
-				a Developer passionate for <strong>Design experiences</strong> 
+				as a Developer passionate for <strong>Design experiences</strong> 
 				I've been working on Full Stack skills to implement <strong>efficient and visual pleasant</strong> ideas.
               </p>
               <p class="about__content-details-para">
@@ -214,7 +214,7 @@
           </span>
         </h2>
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form id="contact-form" action="send" method="POST" enctype = "multipart/form-data" class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -249,7 +249,7 @@
                 id="message"
               ></textarea>
             </div>
-            <button type="submit" class="btn btn--theme contact__btn">
+            <button type="submit" value="submit" class="btn btn--theme contact__btn">
               Submit
             </button>
           </form>
